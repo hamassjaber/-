@@ -1,0 +1,165 @@
+body {
+  background: linear-gradient(to bottom right, #800020, #4b0010);
+  font-family: 'Cairo', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.navbar {
+  background-color: #660018;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #a9a9a9;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #a9a9a9;
+  color: #000;
+}
+
+.page-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+  border: 4px solid #a9a9a9;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+  text-wrap: balance; 
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: white;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 5px;
+  animation: fadeInUp 0.8s ease forwards;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+}
+
+h2:hover {
+  color: #a9ffdf;
+  letter-spacing: 1px;
+  transform: scale(1.03);
+}
+
+.green-title {
+  color: #51b687;
+  border-bottom: 2px solid #51b687;
+}
+
+p, ul {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 20px auto;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+  text-wrap: balance;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  padding: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+img {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  margin: 20px auto;
+}
+
+.image-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.slider img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.slider img:hover {
+  transform: scale(1.03);
+}
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background: #51b687;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .navbar a {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .page-container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
